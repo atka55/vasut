@@ -4,8 +4,9 @@ const allomasok = ['Nyugati','Zugló','Kőbánya-Kispest','Ferihegy','Vecsés',
 
 function elotteutana(megallo)
 {
-    var p = allomasok.indexOf(megallo);
+    var p = allomasok.findIndex(item => megallo.toLowerCase() == item.toLowerCase());
     var r = "";
+    
     if (p==-1)
     {
         r = "Nincsen ilyen megálló ezen a vonalon.";
@@ -35,6 +36,6 @@ function elotteutana(megallo)
 
 function keres()
 {
-    var anev = document.getElementById("allomasnev").value;
+    var anev = document.getElementById("allomasnev").value.toLowerCase();
     document.getElementById("eredmeny").innerHTML = elotteutana(anev);
 }
