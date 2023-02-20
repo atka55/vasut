@@ -18,9 +18,9 @@ function elotteutana(megallo)
         }
         else
         {
-            r += "Előtte_ -";
+            r += "Előtte: -";
         }
-        r = "<br>";
+        r += "<br>";
         if(p == allomasok.length-1)
         {
             r += "Utána: -";
@@ -31,4 +31,10 @@ function elotteutana(megallo)
 
     }
     return r;
+}
+
+function keres()
+{
+    var anev = document.getElementById("allomasnev").value;
+    document.getElementById("eredmeny").innerHTML = elotteutana(anev);
 }
