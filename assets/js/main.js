@@ -2,10 +2,19 @@ const allomasok = ['Nyugati','Zugló','Kőbánya-Kispest','Ferihegy','Vecsés',
 'Üllő','Monor','Monorierdő','Pilis','Albertisa','Ceglédbercel','Abony','Szolnok','Szajol',
 'Törökszentmiklós','Fegyvernek-Örményes','Kisújszállás']
 
+var a = document.getElementById("itt");
+a.max = allomasok.length-1;
+
+
+
 function elotteutana(megallo)
 {
     var p = allomasok.findIndex(item => megallo.toLowerCase() == item.toLowerCase());
     var r = "";
+
+    var ut = document.getElementById("itt");
+    ut.value = p;
+
     
     if (p==-1)
     {
@@ -37,5 +46,7 @@ function elotteutana(megallo)
 function keres()
 {
     var anev = document.getElementById("allomasnev").value.toLowerCase();
+    document.getElementById("eredmeny").innerHTML = "";
     document.getElementById("eredmeny").innerHTML = elotteutana(anev);
 }
+
