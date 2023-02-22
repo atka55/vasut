@@ -1,9 +1,25 @@
-#progress
+.eler
 {
-width: 10%;
-height: 30px;
-background-color: #04AA6D;
-text-align: center;
-line-height: 30px;
-color: white;
+    transition: 3s;
+}
+.kep
+{
+    width: 140px;
+    height: 120px;
+}
+.jobb
+{
+    float: right;
+}
+.kep1
+{
+ height: 120px;
+ width: 700px;
+}
+.von
+{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    transition: 1s;
 }
