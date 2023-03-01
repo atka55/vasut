@@ -1,0 +1,2 @@
+[0301/105144.266:ERROR:crashpad_client_win.cc(176)] crash server did not respond, self-terminating
+[0301/105144.437:ERROR:registration_protocol_win.cc(103)] CreateFile: A rendszer nem találja a megadott fájlt. (0x2)
